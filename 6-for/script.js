@@ -16,3 +16,12 @@ for (let e=0;e<10;e=e+1) {
     }
     console.log(e)
 }
+
+const imprimirPar=(num) => {
+    for (let i=num;i>=0;i--) {
+        if (i%2==0) {
+            console.log(i)
+        }
+    }
+}
+imprimirPar(40)
