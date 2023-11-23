@@ -18,7 +18,6 @@ class Carrinho {
             this.itens.push(item)
         }
 
-
         this.qtd += item.qtd
         this.valorTotal += item.valor * item.qtd
     }
@@ -30,6 +29,7 @@ class Carrinho {
 
                 this.qtd -= item.qtd
                 this.valorTotal -= item.valor * item.qtd
+
                 if (this.itens[itemCarrinho].qtd == 0) {
                     let obj = this.itens[itemCarrinho]
                     let index = this.itens.findIndex(function (obj) { return obj.id == item.id })
@@ -37,9 +37,6 @@ class Carrinho {
                 }
             }
         }
-
-
-
     }
 }
 
