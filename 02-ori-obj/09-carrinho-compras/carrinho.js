@@ -26,7 +26,6 @@ class Carrinho {
             if (this.itens[itemCarrinho].id == item.id) {
 
                 this.itens[itemCarrinho].qtd -= item.qtd
-
                 this.qtd -= item.qtd
                 this.valorTotal -= item.valor * item.qtd
 
