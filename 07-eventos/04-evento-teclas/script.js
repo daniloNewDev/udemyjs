@@ -1,3 +1,13 @@
-let bt1 = document.querySelector("#bt1")
+window.addEventListener("keydown", function (e) {
+    if (e.key == "q") {
+        console.log("Apertou o 'Q'!")
+    } else if (e.key == "Enter") {
+        console.log("Apertou Enter!")
+    }
+})
 
-bt1.addEventListener("click", function (e) { e.preventDefault() })
+window.addEventListener("keyup", function (e) {
+    if (e.key == "Enter") {
+        console.log("Soltou o Enter!")
+    }
+})
